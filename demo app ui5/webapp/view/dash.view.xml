@@ -1,0 +1,47 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="DemoUI5.controller.dash"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App id="app">
+		<pages>
+			<Page title="Students Detais Page">
+				<content>
+					<Table id="empTable" items="{/}">
+						<headerToolbar>
+							<OverflowToolbar>
+								<Title id="title" text="Student details"/>
+							</OverflowToolbar>
+						</headerToolbar>
+						<columns>
+							<Column>
+								<Text text="Student Id"/>
+							</Column>
+							<Column>
+								<Text text="Student Name"/>
+							</Column>
+							<Column>
+								<Text text="Student Mobile NO"/>
+							</Column>
+							<Column>
+								<Text text="Student Address"/>
+							</Column>
+							<Column>
+								<Text text="Department"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem>
+								<cells>
+									<Text text=" {StudentId}"/>
+									<Text text=" {StudentName}"/>
+									<Text text=" {StudentMobile}"/>
+									<Text text=" {StudentAddress}"/>
+									<Text text=" {StuDept}"/>
+									
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
